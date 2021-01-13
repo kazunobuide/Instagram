@@ -83,7 +83,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yT2-CE-ugs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="739.13043478260875" y="-899.33035714285711"/>
+            <point key="canvasLocation" x="514" y="-1022"/>
         </scene>
         <!--ホーム-->
         <scene sceneID="0Au-2R-Gst">
@@ -234,7 +234,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H0Q-K8-CCz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="502.89855072463774" y="-252.45535714285714"/>
+            <point key="canvasLocation" x="461" y="-309"/>
         </scene>
         <!--設定-->
         <scene sceneID="uz2-rk-09I">
