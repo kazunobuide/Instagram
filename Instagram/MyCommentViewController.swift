@@ -19,7 +19,7 @@ class MyCommentViewController: UIViewController {
         print("コメント投稿ボタンが押されました")
         if let commentUserName = Auth.auth().currentUser?.displayName{
             var updateComment:FieldValue
-            let comment = "\(commentUserName):\(self.commentTextField.text!)"
+            let comment = "\(commentUserName) : \(self.commentTextField.text!)"
             updateComment = FieldValue.arrayUnion([comment])
             let postRef = Firestore.firestore().collection(Const.PostPath).document(outputValue.id)
             postRef.updateData(["comment":updateComment])
