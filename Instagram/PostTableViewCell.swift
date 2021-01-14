@@ -8,14 +8,26 @@
 
 import UIKit
 import FirebaseUI
+import FirebaseUI
+import SVProgressHUD
+import SDWebImage
 
-class PostTableViewCell: UITableViewCell {
+class PostTableViewCell: UITableViewCell,UITextFieldDelegate {
     @IBOutlet weak var postImageView: UIImageView!
     @IBOutlet weak var likeButton: UIButton!
     @IBOutlet weak var likeLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var captionLabel: UILabel!
+    //（課題）
+    @IBOutlet weak var commentLabel: UILabel!
+    @IBOutlet weak var createCommentButton: UIButton!
     
+    
+    /*@IBAction func createMyCommentButton(_ sender: Any) {
+        print("DEBUG_PRINT: ボタンが押されましたよPostTableViewCell")
+        // コメント入力画面に遷移する
+        performSegue(withIdentifier: "MyComment", sender: nil)
+    }*/
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -35,7 +47,12 @@ class PostTableViewCell: UITableViewCell {
 
         // キャプションの表示
         self.captionLabel.text = "\(postData.name!) : \(postData.caption!)"
-
+        
+        //（課題）コメントの表示
+        self.commentLabel.text = ""
+            if let comment = postData.comment{
+                self.commentLabel.text = "\(postData.name!) : \(comment)"
+            }
         // 日時の表示
         self.dateLabel.text = ""
         if let date = postData.date {

@@ -293,6 +293,63 @@
             </objects>
             <point key="canvasLocation" x="-388" y="-309"/>
         </scene>
+        <!--My Comment View Controller-->
+        <scene sceneID="L8f-zG-4U9">
+            <objects>
+                <viewController storyboardIdentifier="MyComment" id="QzR-8F-qxE" customClass="MyCommentViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="s8L-tj-u4c">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dcA-Vf-Zeg">
+                                <rect key="frame" x="57" y="124" width="300" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="FuV-T4-FbR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P29-Ss-Kbr">
+                                <rect key="frame" x="57" y="168" width="300" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="ywW-xe-AR4"/>
+                                </constraints>
+                                <state key="normal" title="コメント投稿" backgroundImage="btn"/>
+                                <connections>
+                                    <action selector="handleSendingButton:" destination="QzR-8F-qxE" eventType="touchUpInside" id="Mgz-7a-tty"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AjG-i3-0Ts">
+                                <rect key="frame" x="57" y="218" width="300" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="zNI-7B-f6l"/>
+                                </constraints>
+                                <state key="normal" title="キャンセル" backgroundImage="btn"/>
+                                <connections>
+                                    <action selector="cancel:" destination="QzR-8F-qxE" eventType="touchUpInside" id="hdg-du-MFT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="P29-Ss-Kbr" firstAttribute="top" secondItem="dcA-Vf-Zeg" secondAttribute="bottom" constant="10" id="KjC-h3-Vdn"/>
+                            <constraint firstItem="AjG-i3-0Ts" firstAttribute="centerX" secondItem="s8L-tj-u4c" secondAttribute="centerX" id="MRT-VF-K9g"/>
+                            <constraint firstItem="AjG-i3-0Ts" firstAttribute="top" secondItem="P29-Ss-Kbr" secondAttribute="bottom" constant="10" id="XaT-IZ-4ar"/>
+                            <constraint firstItem="dcA-Vf-Zeg" firstAttribute="top" secondItem="xK3-qY-7H2" secondAttribute="top" constant="80" id="Xt7-fW-0hO"/>
+                            <constraint firstItem="P29-Ss-Kbr" firstAttribute="centerX" secondItem="s8L-tj-u4c" secondAttribute="centerX" id="dM1-zc-sFA"/>
+                            <constraint firstItem="dcA-Vf-Zeg" firstAttribute="centerX" secondItem="s8L-tj-u4c" secondAttribute="centerX" id="llP-Ff-ORD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xK3-qY-7H2"/>
+                    </view>
+                    <connections>
+                        <outlet property="commentTextField" destination="dcA-Vf-Zeg" id="Qdc-w5-mRF"/>
+                        <outlet property="sendingButton" destination="P29-Ss-Kbr" id="cNk-n0-Dpi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b3N-3c-6dt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1213.0434782608697" y="-1022.5446428571428"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="JYQ-IR-C7f">
             <objects>

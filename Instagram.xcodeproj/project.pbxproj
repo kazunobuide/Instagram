@@ -11,6 +11,7 @@
 		732BFF2025AD5DDD0076E6B0 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732BFF1F25AD5DDD0076E6B0 /* PostData.swift */; };
 		732BFF2325AD5E4C0076E6B0 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732BFF2125AD5E4C0076E6B0 /* PostTableViewCell.swift */; };
 		732BFF2425AD5E4C0076E6B0 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 732BFF2225AD5E4C0076E6B0 /* PostTableViewCell.xib */; };
+		732BFF2825AE9CD40076E6B0 /* MyCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732BFF2725AE9CD40076E6B0 /* MyCommentViewController.swift */; };
 		73FCBC6525A2A62200775DD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FCBC6425A2A62200775DD6 /* AppDelegate.swift */; };
 		73FCBC6725A2A62200775DD6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FCBC6625A2A62200775DD6 /* SceneDelegate.swift */; };
 		73FCBC6C25A2A62200775DD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73FCBC6A25A2A62200775DD6 /* Main.storyboard */; };
@@ -33,6 +34,7 @@
 		732BFF1F25AD5DDD0076E6B0 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
 		732BFF2125AD5E4C0076E6B0 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		732BFF2225AD5E4C0076E6B0 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		732BFF2725AE9CD40076E6B0 /* MyCommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCommentViewController.swift; sourceTree = "<group>"; };
 		73FCBC6125A2A62200775DD6 /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73FCBC6425A2A62200775DD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73FCBC6625A2A62200775DD6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				73FCBC9025A2AD5300775DD6 /* PostViewController.swift */,
 				732BFF2125AD5E4C0076E6B0 /* PostTableViewCell.swift */,
 				732BFF2225AD5E4C0076E6B0 /* PostTableViewCell.xib */,
+				732BFF2725AE9CD40076E6B0 /* MyCommentViewController.swift */,
 				73FCBC8E25A2AD3F00775DD6 /* SettingViewController.swift */,
 				73FCBC8C25A2ACE800775DD6 /* LoginViewController.swift */,
 				73FCBC9625A2B79F00775DD6 /* TabBarController.swift */,
@@ -246,6 +249,7 @@
 				73FCBC9525A2AD7A00775DD6 /* HomeViewController.swift in Sources */,
 				732BFF2025AD5DDD0076E6B0 /* PostData.swift in Sources */,
 				73FCBC9325A2AD6600775DD6 /* ImageSelectViewController.swift in Sources */,
+				732BFF2825AE9CD40076E6B0 /* MyCommentViewController.swift in Sources */,
 				73FCBC6525A2A62200775DD6 /* AppDelegate.swift in Sources */,
 				73FCBC6725A2A62200775DD6 /* SceneDelegate.swift in Sources */,
 				732BFF1A25AD45D70076E6B0 /* Const.swift in Sources */,
