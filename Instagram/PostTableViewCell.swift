@@ -49,10 +49,13 @@ class PostTableViewCell: UITableViewCell,UITextFieldDelegate {
         self.captionLabel.text = "\(postData.name!) : \(postData.caption!)"
         
         //（課題）コメントの表示
-        self.commentLabel.text = ""
-            if let comment = postData.comment{
-                self.commentLabel.text = "\(postData.name!) : \(comment)"
-            }
+        var commentString: String = ""
+           let comment: [String] = postData.comment
+        commentString = comment.joined(separator: "\n")
+        for  comment in postData.comment{
+            commentString = comment
+            self.commentLabel.text = commentString
+        }
         // 日時の表示
         self.dateLabel.text = ""
         if let date = postData.date {

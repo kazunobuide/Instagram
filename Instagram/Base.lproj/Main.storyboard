@@ -316,7 +316,7 @@
                                 </constraints>
                                 <state key="normal" title="コメント投稿" backgroundImage="btn"/>
                                 <connections>
-                                    <action selector="handleSendingButton:" destination="QzR-8F-qxE" eventType="touchUpInside" id="Mgz-7a-tty"/>
+                                    <action selector="commentButton:" destination="QzR-8F-qxE" eventType="touchUpInside" id="rEi-TZ-hZL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AjG-i3-0Ts">
@@ -342,8 +342,7 @@
                         <viewLayoutGuide key="safeArea" id="xK3-qY-7H2"/>
                     </view>
                     <connections>
-                        <outlet property="commentTextField" destination="dcA-Vf-Zeg" id="Qdc-w5-mRF"/>
-                        <outlet property="sendingButton" destination="P29-Ss-Kbr" id="cNk-n0-Dpi"/>
+                        <outlet property="commentTextField" destination="dcA-Vf-Zeg" id="Kd6-8u-9zI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b3N-3c-6dt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
