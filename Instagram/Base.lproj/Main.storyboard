@@ -326,7 +326,7 @@
                                 </constraints>
                                 <state key="normal" title="キャンセル" backgroundImage="btn"/>
                                 <connections>
-                                    <action selector="cancel:" destination="QzR-8F-qxE" eventType="touchUpInside" id="hdg-du-MFT"/>
+                                    <action selector="commentCancelButton:" destination="QzR-8F-qxE" eventType="touchUpInside" id="MMG-fi-qWp"/>
                                 </connections>
                             </button>
                         </subviews>
